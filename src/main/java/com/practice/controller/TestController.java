@@ -32,7 +32,7 @@ public class TestController extends HttpServlet{
         writer.println("<h1> Q:What do you like best? </h1>");
         writer.println("<h1> A:" + vegetable + "</h1>");
         writer.println("<h1> Q: Why ?</h1>");
-        writer.println("<h1> A: cause it's" + reason + "</h1>");
+        writer.println("<h1> A: cause it's " + reason + "</h1>");
         writer.println("</body></html>");
     }
 }
