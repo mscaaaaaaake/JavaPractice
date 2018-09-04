@@ -20,14 +20,19 @@ public class TestController extends HttpServlet{
 
         PrintWriter writer = response.getWriter();
         String vegetable = request.getParameter("vegetable");
+        String reason = request.getParameter("reason");
         if (vegetable == null) {
             vegetable = "Tomato";
         }
 
+        if (reason == null) {
+            reason = "sweet";
+        }
         writer.println("<html><body>");
         writer.println("<h1> Q:What do you like best? </h1>");
-        writer.println("<br>");
         writer.println("<h1> A:" + vegetable + "</h1>");
+        writer.println("<h1> Q: Why ?</h1>");
+        writer.println("<h1> A: cause it's" + reason + "</h1>");
         writer.println("</body></html>");
     }
 }
